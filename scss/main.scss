@@ -11,16 +11,44 @@ body {
   background-color: #ddd;
 }
 
+#wrapp {
+  padding: 0 2%;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 4%;
+}
+
+.caption {
+  padding: 3% 6%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.caption p {
+  text-indent: 10px;
+  font-size: .9em;
+  line-height: 1.7em;
+}
+
 /*----------------
 VIDEO
 -----------------*/
 
 .video-container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto .2em;
 }
 
 video {
+  max-width: 100%;
   width: 100%;
   border-radius: 0 0 5px 5px;
 }
