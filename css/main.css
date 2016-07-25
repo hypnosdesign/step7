@@ -376,9 +376,6 @@ GENERAl
 body {
   background-color: #ddd; }
 
-#wrapp {
-  padding: 0 2%; }
-
 .title {
   text-align: center; }
 
@@ -402,8 +399,13 @@ body {
 VIDEO
 -----------------*/
 .video-container {
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto .2em; }
+  margin: 0 auto .2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 video {
   max-width: 100%;
