@@ -8,9 +8,12 @@
 <body>
 <div id="wrapp">
   <div class="video-container">
-    <video src="video/video.ogg" autoplay poster="posterimage.jpg">
-
+    <video  controls>
+      <source src="video/video.mp4" type="video/mp4">
+      <source src="video/video.ogg" type="video/ogg">
+      <track kind="captions" src="video/captions.vtt" srclang="en" default>
     </video>
+
   </div>
 </div>
 
