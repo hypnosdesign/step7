@@ -121,17 +121,15 @@ BUTTONS
 
 
 .buttons-container {
-  width: 100%;
-  bottom: 2px;
+  max-width: 100%;
   background-color: rgba(255, 255, 255,.8);
   padding: 1% 0;
   margin: 0;
-  border: 1px solid pink;
   @extend %cf;
 
     > * {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       margin: 0;
       padding: 0;
       border: 0;
@@ -140,6 +138,7 @@ BUTTONS
       margin-left: 10px;
       border-radius: 5px;
       float: left;
+      display: block;
 
         svg{
           width: 100%;
@@ -154,8 +153,55 @@ BUTTONS
       margin-right: 10px;
     }
 
+    .reload, .subtitles {
+      float: right;
+    }
+
+    .time {
+      width: 100px;
+      font-size: 13px;
+      text-align: center;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    .sound-container {
+      display: block;
+      height: 10px;
+      width: 100px;
+      max-width: 100%;
+      background-color: #000;
+      margin-top: 9px;
+      border-radius: 0;
+    }
+
+    .progress-sound {
+     height: 10px;
+     width: 100%;
+     background: orange;
+
+    }
+
+
+
+}
+
+.bar-container {
+  height: 10px;
+  background-color: #000;
+
+}
+
+.progress-bar {
+ height: 10px;
+ width: 0;
+ background: orange;
 }
 
 .hide {
   @extend %hide ;
+}
+
+#cap {
+  display: none;
 }

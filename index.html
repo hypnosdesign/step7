@@ -15,14 +15,22 @@
     <video id="vid">
       <source src="video/video.mp4" type="video/mp4">
       <source src="video/video.ogg" type="video/ogg">
-      <track kind="captions" src="video/captions.vtt" srclang="en" default>
+      <track id="cap" kind="captions" src="video/captions.vtt" srclang="en" mode="hidden">
       <p>It seems your browser doesn't support HTML5 video tag. Please update it!</p>
     </video>
     <div class="controllers">
+      <div class="bar-container">
+        <div class="progress-bar"></div>
+      </div>
       <div class="buttons-container">
         <button class="play"></button>
+        <div class="time">00.00 / 00.59</div>
         <button class="mute"></button>
+        <div class="sound-container">
+          <div class="progress-sound"></div>
+        </div>
         <button class="fullscreen"></button>
+        <button class="subtitles"></button>
       </div>
     </div>
   </div>
